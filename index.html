@@ -3,33 +3,34 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Basketball Scoreboard</h1>
-        <p id="message"></p>
-        <div class="container">
-            <div id='home-section' class='score-player'>
-                <h3>HOME</h3>
-                <h2 class='score' id="home-score">0</h2>
-                <label></label>
-                <div class='btn-section'>
-                    <button id="plus-one-home" onclick="addOnePointToHome()">+1</button>
-                    <button id="plus-two-home" onclick="addTwoPointsToHome()">+2</button>
-                    <button id="plus-three-home" onclick="addThreePointsToHome()">+3</button>
-                </div>     
+        <main>
+            <h1>Basketball Scoreboard</h1>
+            <p id="message"></p>
+            <div class="container">
+                <div id='home-section' class='score-player'>
+                    <h3>HOME</h3>
+                    <h2 class='score' id="home-score">0</h2>
+                
+                    <div class='btn-section'>
+                        <button id="plus-one-home" onclick="addOnePointToHome()">+1</button>
+                        <button id="plus-two-home" onclick="addTwoPointsToHome()">+2</button>
+                        <button id="plus-three-home" onclick="addThreePointsToHome()">+3</button>
+                    </div>     
+                </div>
+                <div id='guest-section' class='score-player'>
+                    <h3>GUEST</h3>
+                    <h2 class='score' id='guest-score'>0</h2>
+                    <div class='btn-section'>
+                        <button id="plus-one-guest" onclick="addOnePointToGuest()">+1</button>
+                        <button id="plus-two-guest" onclick="addTwoPointsToGuest()">+2</button>
+                        <button id="plus-three_guest" onclick="addThreePointsToGuest()">+3</button>
+                    </div>  
+                </div>
             </div>
-            <div id='guest-section' class='score-player'>
-                <h3>GUEST</h3>
-                <h2 class='score' id='guest-score'>0</h2>
-                <label></label>
-                 <div class='btn-section'>
-                    <button id="plus-one-guest" onclick="addOnePointToGuest()">+1</button>
-                    <button id="plus-two-guest" onclick="addTwoPointsToGuest()">+2</button>
-                    <button id="plus-three_guest" onclick="addThreePointsToGuest()">+3</button>
-                </div>  
+            <div id="new-game">
+                <button id="start" onclick="startNewGame()">Start a new game</button>
             </div>
-        </div>
-        <div id="new-game">
-            <button id="start" onclick="startNewGame()">Start a new game</button>
-        </div>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
