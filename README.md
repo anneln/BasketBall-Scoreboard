@@ -1,4 +1,5 @@
-# coc0f4d2590e16ae46ca318f5
+# My ScoreBoard project
+make a basketBall scoreBoard Project in CSS
 
 ## About Scrimba
 
